@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <style>
+        body {
+            margin: auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+    
+        .galeria-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; 
+        }
+
+    
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .item {
+            background-color: #fff;
+            border: 1px solid #b9b8b8;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .item p {
+            margin-top: 10px;
+            font-weight: bold;
+        
+        }
+
+        @media (max-width: 900px) {
+            .galeria {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        @media (max-width: 500px) {
+            .galeria {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Eeveelutions</h1>
+
+    <div class="galeria-container">
+        <div class="galeria">
+            <div class="item">
+                <img src="imagens/Vaporeon.png" alt="Vaporeon">
+                <p>Vaporeon</p>
+            </div>
+            <div class="item">
+                <img src="imagens/Jolteon.png" alt="Jolteon">
+                <p>Jolteon</p>
+            </div>
+            <div class="item">
+                <img src="imagens/Flareon.png" alt="Flareon">
+                <p>Flareon</p>
+            </div>
+            <div class="item">
+                <img src="imagens/Espeon.png" alt="Espeon">
+                <p>Espeon</p>
+            </div>
+            <div class="item">
+                <img src="imagens/Umbreon.png" alt="Umbreon">
+                <p>Umbreon</p>
+            </div>
+            <div class="item">
+                <img src="imagens/Leafeon.png" alt="Leafeon">
+                <p>Leafeon</p>
+            </div>
+            <div class="item">
+                <img src="imagens/Glaceon.png" alt="Glaceon">
+                <p>Glaceon</p>
+            </div>
+            <div class="item">
+                <img src="imagens/Sylveon.png" alt="Sylveon">
+                <p>Sylveon</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
